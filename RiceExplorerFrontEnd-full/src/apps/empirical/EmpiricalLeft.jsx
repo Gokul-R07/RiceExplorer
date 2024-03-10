@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap"
 import _ from "lodash";
 import { SatelliteDataFilters, AuxDataFilters } from "../../components/DataFilterGroup";
 
-
+import CropSelectionComponent from "./CropSelectionComponent";
 export const EmpiricalLeft = (props) => {
 
 
@@ -14,6 +14,7 @@ export const EmpiricalLeft = (props) => {
 
   return (
     <div className="sidebar h-100 flex-column p-2">
+      <CropSelectionComponent/>
       <Form method="POST" noValidate validated={validated}>
         
         <fieldset >

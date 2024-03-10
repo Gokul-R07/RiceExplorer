@@ -1,0 +1,29 @@
+[
+    {
+      "village": "Kaniympoondi",
+      "latitude": 11.1234,
+      "longitude": 77.1234,
+      "crops": {
+        "Paddy": 1,
+        "Millets": 61,
+        "Pulses": 2,
+        "Cotton": 0,
+        "Sugarcane": 0,
+        "Oilseeds": 1
+      }
+    },
+    {
+      "village": "Rakiapalayam",
+      "latitude": 11.5678,
+      "longitude": 77.5678,
+      "crops": {
+        "Paddy": 1,
+        "Millets": 63,
+        "Pulses": 0,
+        "Cotton": 2,
+        "Sugarcane": 0,
+        "Oilseeds": 0
+      }
+    }
+  ]
+  

@@ -24,7 +24,7 @@ urlpatterns = [
     path('phenology/', include('phenology.urls')),
     path('empirical/', include('empirical.urls')),
     path('classification/', include('classification.urls')),
-    
+    path('myapp/', include('myapp.urls')),
     path("tasks/<str:id>", get_task_with_id),
     path("tasks/", get_tasks),
     
