@@ -2,25 +2,30 @@ import {
   Route,
   Switch,
   useLocation,
-  Redirect
 } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { getCookie } from "./utils/csrfToken";
 import { setToken } from "./features/csrfTokenSlice";
 
+import AppStatusBar from "./components/AppStatusBar";
 import Map from "./components/LeafletMap";
 
 
+import { APP_NAME, setAppName } from "./features/appNameSlice";
 
 import "./App.css";
 import SplitPane from "react-split-pane";
-
+import PhenologyRight from "./apps/phenology/PhenologyRight";
+import PhenologyLeft from "./apps/phenology/PhenologyLeft";
 import { EmpiricalLeft } from "./apps/empirical/EmpiricalLeft";
 import EmpiricalRight from "./apps/empirical/EmpiricalRight";
-
+import { ClassificationLeft } from "./apps/classification/ClassificationLeft";
+import { ClassificationRight } from "./apps/classification/ClassificationRight";
+import { MapCarousel } from "./components/MapCarousel";
 import { LogPanel } from "./components/LogPanel";
 
 const leftSize = {
@@ -40,21 +45,31 @@ function App() {
 
   const appName = useSelector(state => state.appName)
 
+  // const [info, setInfo] = useState("Please run the app to show area of rice.");
 
   useEffect(() => {
     let token = getCookie("csrftoken");
     dispatch(setToken(token));
   }, []);
 
+  useEffect(() => {
+    let temp = location.pathname.split("/");
+    let currentName = temp[temp.length - 1] || "home";
 
+    dispatch(setAppName(APP_NAME[currentName]));
+  }, [location]);
 
   return (
     <div className="vh-100 vw-100">
       <Header />
       <div className="main d-flex h-100 w-100">
         <Switch>
-        <Redirect exact from="/" to="/empirical" />
-        <Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route path={["/empirical", "/phenology", "/classification"]}>
+
             <SplitPane
               split="vertical"
               defaultSize={leftSize["default"]}
@@ -68,7 +83,12 @@ function App() {
                   <Route exact path="/empirical">
                     <EmpiricalLeft  />
                   </Route>
-                
+                  <Route exact path="/phenology">
+                    <PhenologyLeft />
+                  </Route>
+                  <Route exact path="/classification">
+                    <ClassificationLeft  />
+                  </Route>
                 </Switch>
               </div>
 
@@ -94,7 +114,7 @@ function App() {
                     </div>
 
                     <div className="w-100">
-                      <LogPanel />
+                      {appName === "phenology" ? (<MapCarousel />) : <LogPanel />}
                     </div>
 
                   </SplitPane>
@@ -102,11 +122,17 @@ function App() {
 
                 {/* Right panel */}
                 <div className="h-100">
-
+                  <Route exact path="/phenology">
+                    <div className="h-100 w-100">
+                      <PhenologyRight />
+                    </div>
+                  </Route>
                   <Route exact path="/empirical">
                     <EmpiricalRight />
                   </Route>
-                 
+                  <Route exact path="/classification">
+                    <ClassificationRight />
+                  </Route>
                 </div>
               </SplitPane>
             </SplitPane>

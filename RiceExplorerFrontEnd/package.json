@@ -1,0 +1,53 @@
+{
+  "name": "rice_explorer",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://127.0.0.1:8000",
+  "homepage": ".",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.3",
+    "d3": "^7.1.1",
+    "file-saver": "^2.0.5",
+    "html-react-parser": "^1.4.6",
+    "leaflet": "^1.7.1",
+    "lodash": "^4.17.21",
+    "ol": "^4.6.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-bootstrap-icons": "^1.5.0",
+    "react-dom": "^17.0.2",
+    "react-google-charts": "^3.0.15",
+    "react-leaflet": "^3.2.0",
+    "react-leaflet-shapefile-v2": "^3.0.3",
+    "react-openlayers": "^0.3.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-split-pane": "^0.1.92",
+    "shpjs": "^3.6.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
