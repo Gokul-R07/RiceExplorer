@@ -3,7 +3,7 @@ import { Button, Card, Col, Form, Row, ToggleButton } from "react-bootstrap";
 
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
-import { addSeason, deleteSeason, modifySeason, changeSeasonName } from "../features/seasonSlice";
+import {  deleteSeason, modifySeason, changeSeasonName } from "../features/seasonSlice";
 
 import _ from "lodash"
 import { PencilSquare } from "react-bootstrap-icons";
@@ -47,7 +47,7 @@ export const SeasonFilterGroup = (props) => {
   }
 
   return (
-    <Card className="mb-2 border-secondary">
+    <Card className="shadow-lg  bg-white rounded">
       <Row className="align-items-center gx-2 m-0 card-header">
         <Col xs="auto">
           

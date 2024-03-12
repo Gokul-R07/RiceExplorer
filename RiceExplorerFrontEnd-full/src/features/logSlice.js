@@ -8,7 +8,7 @@ export const logSlice = createSlice({
     appendLog: (state, action) => {
       const d = new Date()
       let time = d.toLocaleString()
-      state += `<p><b>[${time}]</b> ${action.payload}<br></p>`
+      state += `<p> ${action.payload}<br></p>`
       return state
     },
   }

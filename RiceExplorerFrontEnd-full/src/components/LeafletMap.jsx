@@ -15,7 +15,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button } from "react-bootstrap";
 import { useContext } from "react";
 import { BASEMAPS } from "../utils/constants";
-import { toggle } from "../features/editingSlice";
 
 
 import L from "leaflet";
@@ -106,42 +105,12 @@ export function Map(props) {
     }
   },[appName])
 
-  // const displayMap = useMemo(
-  //   () => (
-  //     <MapContainer
-  //       center={[28.5973518, 83.54495724]}
-  //       zoom={8}
-  //       id="map"
-  //       whenCreated={(m) => {
-  //         map = m;
-  //       }}
-  //     >
-  //       <LayersControl ref={lcRef}>
-  //         {/* base maps */}
-  //         {Object.entries(BASEMAPS).map(([name, basemap]) => (
-  //           <LayersControl.BaseLayer
-  //             name={name}
-  //             checked={name === defaultBaseMap}
-  //             key={name}
-  //           >
-  //             <TileLayer url={basemap.url} attribution={basemap.attribution} />
-  //           </LayersControl.BaseLayer>
-  //         ))}
 
-  //       </LayersControl>
-
-  //       {/* {showEditControl ? <EditingControl /> : null} */}
-
-  //       {appName !== "phenology" ? <InfoControl info={info} /> : null}
-  //     </MapContainer>
-  //   ),
-  //   []
-  // );
 
   return (
     <MapContainer
-      center={[28.5973518, 83.54495724]}
-      zoom={8}
+      center={[11.1271, 78.6569]}
+      zoom={7}
       id="map"
       whenCreated={(m) => {
         map = m;
@@ -169,19 +138,7 @@ export function Map(props) {
 }
 
 
-// const InfoControl = (props) => {
-//   // const { info } = props;
 
-//   const appStatus = useSelector(state => state.appStatus)
-
-//   return (
-//     <div className="leaflet-bottom leaflet-left">
-//       <div className="leaflet-control leaflet-bar info-board">
-//         {parse(appStatus.info)}
-//       </div>
-//     </div>
-//   );
-// };
 
 
 

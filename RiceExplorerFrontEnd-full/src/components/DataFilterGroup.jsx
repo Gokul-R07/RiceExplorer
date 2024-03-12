@@ -20,7 +20,7 @@ export function SatelliteDataFilters(props) {
   };
 
   return (
-    <Card className="mb-2 border-secondary">
+    <Card className="mb-2 shadow-lg  bg-white rounded">
       <Card.Header>
         <h6 className="m-0 p-0">
           Satellite Dataset
@@ -189,10 +189,10 @@ export const AuxDataFilters = (props) => {
   };
 
   return (
-    <Card className="mb-2 border-secondary">
+    <Card className="shadow-lg  bg-white rounded">
       <Card.Header>
         <h6 className="m-0 p-0">
-          Auxiliary Datasets
+          Choose District
         </h6>
       </Card.Header>
       <Card.Body>
@@ -218,48 +218,24 @@ export const AuxDataFilters = (props) => {
           </Col>
         </Form.Group>
 
-        {datasetFilters["boundary"] === "upload" ? (
-          <Form.Group
-            as={Row}
-            controlId={"dataset_boundary_file"}
-            className="align-items-center mb-2"
-          >
-            <Form.Label column xs={4}>
-              Boundary file <span style={{ color: "red" }}>*</span>
-            </Form.Label>
-            <Col xs={8}>
-              <Form.Control
-                type="file"
-                className="w-100 form-control"
-                required
-                name="boundary_file"
-                onChange={(e) =>
-                  handleChange(
-                    "boundary_file",
-                    URL.createObjectURL(e.target.files[0])
-                  )
-                }
-              />
-            </Col>
-          </Form.Group>
-        ) : null}
+        
 
         <Form.Group
           as={Row}
           controlId={"use_cropmask"}
           className="align-items-center"
         >
-          <Form.Label column xs={4}>
+          {/* <Form.Label column xs={4}>
             Crop Mask 
-          </Form.Label>
-          <Col xs={8}>
+          </Form.Label> */}
+          {/* <Col xs={8}>
             <Form.Check 
               type="checkbox" 
               label="" 
               checked={datasetFilters["use_crop_mask"]}
               onChange={(e) => handleChange("use_crop_mask", e.target.checked)}
             />
-          </Col>
+          </Col> */}
 
         </Form.Group>
         

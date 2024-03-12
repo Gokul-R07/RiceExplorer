@@ -7,8 +7,6 @@ import _ from "lodash";
 import L from 'leaflet'
 import { addTileOverlays, removeAllOverlays } from "../../components/LeafletMap"
 
-import {setInfo} from "../../features/appStatusSlice"
-import { ExportImages } from "../../components/ExportImages";
 import { appendLog } from "../../features/logSlice";
 
 
@@ -122,7 +120,6 @@ export const EmpiricalActions = () => {
           "Run"}
       </Button>
 
-      <ExportImages downloadUrl={downloadUrl} />
     </Stack>
   )
 }
