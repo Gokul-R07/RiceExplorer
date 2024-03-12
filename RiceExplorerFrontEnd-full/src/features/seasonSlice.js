@@ -56,6 +56,28 @@ const reducers = {
   }
 }
 
+// const initialState = Object.fromEntries(
+//   Object.keys(INITIAL_SEASONS).map((season) => [
+//     season,
+//     {
+//       on: true,
+//       start: "",
+//       end: "",
+//       min: "",
+//       max: "",
+//     },
+//   ])
+// );
+
+// const reducers = Object.fromEntries(
+//   Object.keys(INITIAL_SEASONS).map((season) => [
+//     season,
+//     (state, action) => {
+//       state[season] = { ...state[season], ...action.payload }
+//       return state
+//     },
+//   ])
+// );
 
 export const SeasonSlice = createSlice({
   name: "seasons",
