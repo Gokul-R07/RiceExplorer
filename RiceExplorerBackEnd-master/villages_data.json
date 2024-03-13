@@ -1,29 +1,459 @@
 [
-    {
-      "village": "Kaniympoondi",
-      "latitude": 11.1234,
-      "longitude": 77.1234,
-      "crops": {
-        "Paddy": 1,
-        "Millets": 61,
-        "Pulses": 2,
-        "Cotton": 0,
-        "Sugarcane": 0,
-        "Oilseeds": 1
+  {
+    "Block": "Avinashi",
+    "Villages": [
+      {
+        "SNo": 1,
+        "VillageName": "Kaniympoondi",
+        "Latitude": 11.107,
+        "Longitude": 77.345,
+        "Crops": {
+          "Paddy": 1,
+          "Millets": 61,
+          "Pulses": 2,
+          "Cotton": 0,
+          "Sugarcane": 0,
+          "Oilseeds": 1
+        }
+      },
+      {
+        "SNo": 2,
+        "VillageName": "Rakiapalayam",
+        "Latitude": 11.112,
+        "Longitude": 77.352,
+        "Crops": {
+          "Paddy": 1,
+          "Millets": 63,
+          "Pulses": 0,
+          "Cotton": 2,
+          "Sugarcane": 0,
+          "Oilseeds": 0
+        }
+      },
+      {
+        "SNo": 3,
+        "VillageName": "Palakarai",
+        "Latitude": 11.119,
+        "Longitude": 77.359,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 187,
+          "Pulses": 1,
+          "Cotton": 4,
+          "Sugarcane": 0,
+          "Oilseeds": 6
+        }
+      },
+      {
+        "VillageName": "Avinashi",
+        "Latitude": 11.1913,
+        "Longitude": 77.2623,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 48,
+          "Pulses": 10,
+          "Cotton": 0,
+          "Sugarcane": 1,
+          "Oilseeds": 2
+        }
+      },
+      {
+        "VillageName": "Karumampalayam",
+        "Latitude": 11.2202,
+        "Longitude": 77.2765,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 73,
+          "Pulses": 2,
+          "Cotton": 1,
+          "Sugarcane": 0,
+          "Oilseeds": 3
+        }
+      },
+      {
+        "VillageName": "Chinnarapalayam",
+        "Latitude": 11.2568,
+        "Longitude": 77.2901,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 113,
+          "Pulses": 19,
+          "Cotton": 3,
+          "Sugarcane": 0,
+          "Oilseeds": 67
+        }
+      },
+      {
+        "VillageName": "Naduvancherry",
+        "Latitude": 11.2600,
+        "Longitude": 77.3100,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 58,
+          "Pulses": 6,
+          "Cotton": 1,
+          "Sugarcane": 2,
+          "Oilseeds": 49
+        }
+      },
+      {
+        "VillageName": "Iyyampalayam",
+        "Latitude": 11.2700,
+        "Longitude": 77.3250,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 91,
+          "Pulses": 10,
+          "Cotton": 13,
+          "Sugarcane": 9,
+          "Oilseeds": 46
+        }
+      },
+      {
+        "VillageName": "Thulakkamuthur",
+        "Latitude": 11.2800,
+        "Longitude": 77.3350,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 121,
+          "Pulses": 4,
+          "Cotton": 2,
+          "Sugarcane": 2,
+          "Oilseeds": 32
+        }
+      },
+      {
+        "VillageName": "Kuppandampalayam",
+        "Latitude": 11.2900,
+        "Longitude": 77.3450,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 91,
+          "Pulses": 4,
+          "Cotton": 4,
+          "Sugarcane": 1,
+          "Oilseeds": 12
+        }
+      },
+      {
+        "VillageName": "Vadugapalayam",
+        "Latitude": 11.3000,
+        "Longitude": 77.3550,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 381,
+          "Pulses": 11,
+          "Cotton": 26,
+          "Sugarcane": 26,
+          "Oilseeds": 138
+        }
+      },
+      {
+        "VillageName": "Vettuvapalayam",
+        "Latitude": 11.3102,
+        "Longitude": 77.3650,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 206,
+          "Pulses": 31,
+          "Cotton": 10,
+          "Sugarcane": 16,
+          "Oilseeds": 98
+        }
+      },
+      {
+        "VillageName": "Nammbiyampalayam",
+        "Latitude": 11.3203,
+        "Longitude": 77.3751,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 259,
+          "Pulses": 14,
+          "Cotton": 9,
+          "Sugarcane": 5,
+          "Oilseeds": 6
+        }
+      },
+      {
+        "VillageName": "Tekkalur",
+        "Latitude": 11.3304,
+        "Longitude": 77.3852,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 461,
+          "Pulses": 7,
+          "Cotton": 4,
+          "Sugarcane": 0,
+          "Oilseeds": 1
+        }
+      },
+      {
+        "VillageName": "Sembiyanallur",
+        "Latitude": 11.3405,
+        "Longitude": 77.3953,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 88,
+          "Pulses": 15,
+          "Cotton": 2,
+          "Sugarcane": 0,
+          "Oilseeds": 0
+        }
+      },
+      {
+        "VillageName": "Velauthampalayam",
+        "Latitude": 11.3506,
+        "Longitude": 77.4054,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 145,
+          "Pulses": 4,
+          "Cotton": 1,
+          "Sugarcane": 0,
+          "Oilseeds": 0
+        }
+      },
+      {
+        "VillageName": "Pudupalayam North",
+        "Latitude": 11.3607,
+        "Longitude": 77.4155,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 124,
+          "Pulses": 4,
+          "Cotton": 3,
+          "Sugarcane": 0,
+          "Oilseeds": 1
+        }
+      },
+      {
+        "VillageName": "Pudupalayam South",
+        "Latitude": 11.3708,
+        "Longitude": 77.4256,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 73,
+          "Pulses": 2,
+          "Cotton": 0,
+          "Sugarcane": 0,
+          "Oilseeds": 0
+        }
+      },
+      {
+        "VillageName": "Pongalur",
+        "Latitude": 11.3809,
+        "Longitude": 77.4357,
+        "Crops": {
+          "Paddy": 1,
+          "Millets": 49,
+          "Pulses": 22,
+          "Cotton": 7,
+          "Sugarcane": 2,
+          "Oilseeds": 220
+        }
+      },
+      {
+        "VillageName": "Pothampalayam",
+        "Latitude": 11.3900,
+        "Longitude": 77.4400,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 207,
+          "Pulses": 63,
+          "Cotton": 0,
+          "Sugarcane": 0,
+          "Oilseeds": 360
+        }
+      },
+      {
+        "VillageName": "Punjaithamaraikulam",
+        "Latitude": 11.4000,
+        "Longitude": 77.4500,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 145,
+          "Pulses": 26,
+          "Cotton": 1,
+          "Sugarcane": 5,
+          "Oilseeds": 176
+        }
+      },
+      {
+        "VillageName": "Pappankulam",
+        "Latitude": 11.4100,
+        "Longitude": 77.4600,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 138,
+          "Pulses": 25,
+          "Cotton": 15,
+          "Sugarcane": 17,
+          "Oilseeds": 220
+        }
+      },
+      {
+        "VillageName": "Cheyur",
+        "Latitude": 11.4200,
+        "Longitude": 77.4700,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 144,
+          "Pulses": 24,
+          "Cotton": 13,
+          "Sugarcane": 55,
+          "Oilseeds": 132
+        }
+      },
+      {
+        "VillageName": "Alathur",
+        "Latitude": 11.4300,
+        "Longitude": 77.4800,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 145,
+          "Pulses": 45,
+          "Cotton": 2,
+          "Sugarcane": 5,
+          "Oilseeds": 312
+        }
+      },
+      {
+        "VillageName": "Mangarasavalayapalayam",
+        "Latitude": 11.4400,
+        "Longitude": 77.4900,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 161,
+          "Pulses": 39,
+          "Cotton": 1,
+          "Sugarcane": 4,
+          "Oilseeds": 302
+        }
+      },
+      {
+        "VillageName": "Kuttagam",
+        "Latitude": 11.4500,
+        "Longitude": 77.5000,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 139,
+          "Pulses": 6,
+          "Cotton": 2,
+          "Sugarcane": 4,
+          "Oilseeds": 780
+        }
+      },
+      {
+        "VillageName": "Pulipar",
+        "Latitude": 11.4600,
+        "Longitude": 77.5100,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 139,
+          "Pulses": 14,
+          "Cotton": 18,
+          "Sugarcane": 25,
+          "Oilseeds": 270
+        }
+      },
+      {
+        "SNo": 32,
+        "VillageName": "Thathanur",
+        "Latitude": 11.2345,
+        "Longitude": 77.3456,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 201,
+          "Pulses": 7,
+          "Cotton": 4,
+          "Sugarcane": 20,
+          "Oilseeds": 454
+        }
+      },
+      {
+        "SNo": 34,
+        "VillageName": "Thandukkarapalayam",
+        "Latitude": 11.2567,
+        "Longitude": 77.3678,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 297,
+          "Pulses": 25,
+          "Cotton": 3,
+          "Sugarcane": 5,
+          "Oilseeds": 327
+        }
+      },
+      {
+        "SNo": 35,
+        "VillageName": "Muriandampalayam",
+        "Latitude": 11.2789,
+        "Longitude": 77.3890,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 200,
+          "Pulses": 13,
+          "Cotton": 16,
+          "Sugarcane": 18,
+          "Oilseeds": 230
+        }
+      },
+      {
+        "SNo": 36,
+        "VillageName": "Kanur",
+        "Latitude": 11.3011,
+        "Longitude": 77.4112,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 167,
+          "Pulses": 34,
+          "Cotton": 14,
+          "Sugarcane": 10,
+          "Oilseeds": 199
+        }
+      },
+      {
+        "SNo": 37,
+        "VillageName": "Ramanathapuram",
+        "Latitude": 11.3233,
+        "Longitude": 77.4334,
+        "Crops": {
+          "Paddy": 2,
+          "Millets": 144,
+          "Pulses": 4,
+          "Cotton": 33,
+          "Sugarcane": 11,
+          "Oilseeds": 8
+        }
+      },
+      {
+        "SNo": 38,
+        "VillageName": "Karuavalur",
+        "Latitude": 11.3455,
+        "Longitude": 77.4556,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 106,
+          "Pulses": 8,
+          "Cotton": 25,
+          "Sugarcane": 0,
+          "Oilseeds": 3
+        }
+      },
+      {
+        "SNo": 39,
+        "VillageName": "Uppilipalayam",
+        "Latitude": 11.3677,
+        "Longitude": 77.4778,
+        "Crops": {
+          "Paddy": 0,
+          "Millets": 153,
+          "Pulses": 4,
+          "Cotton": 16,
+          "Sugarcane": 0,
+          "Oilseeds": 4
+        }
       }
-    },
-    {
-      "village": "Rakiapalayam",
-      "latitude": 11.5678,
-      "longitude": 77.5678,
-      "crops": {
-        "Paddy": 1,
-        "Millets": 63,
-        "Pulses": 0,
-        "Cotton": 2,
-        "Sugarcane": 0,
-        "Oilseeds": 0
-      }
-    }
-  ]
-  
+    ]
+  }
+]

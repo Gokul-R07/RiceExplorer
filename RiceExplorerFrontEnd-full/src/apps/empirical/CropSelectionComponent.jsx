@@ -1,84 +1,119 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet'; // Make sure to import L from 'leaflet'
-
-// Placeholder icon URLs for each crop type
-const cropIcons = {
-  Paddy: 'https://png.pngtree.com/element_pic/17/07/31/95414b38118eab5f437f323ace3d721b.jpg', // Replace with actual path
-  Millets: 'https://png.pngtree.com/element_pic/17/07/31/95414b38118eab5f437f323ace3d721b.jpg', // Replace with actual path
-  // Add more icons for each crop type
-};
-
-// Simple modal component to show the total area
-const Modal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
-
-  return (
-    <div style={{
-      position: 'fixed',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      backgroundColor: 'white',
-      padding: '20px',
-      zIndex: 1000,
-    }}>
-      <button onClick={onClose}>Close</button>
-      {children}
-    </div>
-  );
-};
+import L from 'leaflet';
+import { Modal, Button } from 'react-bootstrap'; // Importing Bootstrap components
+import {
+    LayersControl,
+    MapContainer,
+    TileLayer,
+    useMap,
+    GeoJSON,
+    Popup,
+    Marker
+  } from "react-leaflet";
+import { BASEMAPS } from "../../utils/constants";
+  
+  import "leaflet/dist/leaflet.css";
+// Assuming you have a basic CSS for Leaflet and Bootstrap included in your project
 
 const CropSelectionComponent = () => {
+  const [selectedBlock, setSelectedBlock] = useState('');
   const [selectedCrop, setSelectedCrop] = useState('');
   const [villages, setVillages] = useState([]);
   const [totalArea, setTotalArea] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const fetchVillageData = (crop) => {
-    axios.get(`/myapp/crop_data/?crop=${crop}`)
+  const fetchVillageData = () => {
+    axios.get(`/myapp/crop_data/?block=${selectedBlock}&crop=${selectedCrop}`)
       .then(response => {
         setVillages(response.data.villages);
         setTotalArea(response.data.total_area);
-        setModalOpen(true); // Open the modal on successful fetch
+        setModalOpen(true);
       })
       .catch(error => {
         console.error('There was an error!', error);
-        setModalOpen(false); // Ensure modal is not opened on error
+        setModalOpen(false);
       });
   };
 
   // Function to create a custom icon based on the crop type
-  const createIcon = (cropType) => {
+const createIcon = (cropType) => {
+    // Mapping crop types to icon URLs
+    const cropIcons = {
+      Paddy: 'https://static.thenounproject.com/png/3050925-200.png',
+      Millets: 'path/to/millets-icon.png',
+      Pulses: 'path/to/pulses-icon.png',
+      Cotton: 'path/to/cotton-icon.png',
+      Sugarcane: 'path/to/sugarcane-icon.png',
+      Oilseeds: 'path/to/oilseeds-icon.png',
+      // Add more mappings for other crops as needed
+      Default: 'path/to/default-icon.png', // A default icon in case no specific icon is found for the crop type
+    };
+  
+    const iconUrl = cropIcons[cropType] || cropIcons['Default']; // Use the specific crop icon, or fallback to default
+    
     return L.icon({
-      iconUrl: cropIcons[cropType] || 'https://png.pngtree.com/element_pic/17/07/31/95414b38118eab5f437f323ace3d721b.jpg', // Fallback to a default icon if none is specified
+      iconUrl,
       iconSize: [35, 35], // You can adjust the size as needed
+      iconAnchor: [17, 35], // Adjust according to the icon's size to position the icon correctly
+      popupAnchor: [0, -35], // Adjust if necessary to position the popup correctly relative to the icon
     });
   };
-
+  
   return (
     <div>
+      <select onChange={(e) => setSelectedBlock(e.target.value)} value={selectedBlock}>
+        <option value="">Select a Block</option>
+        <option value="Avinashi">Avinashi</option>
+        {/* Add more blocks as options here */}
+      </select>
+
       <select onChange={(e) => setSelectedCrop(e.target.value)} value={selectedCrop}>
         <option value="">Select a Crop</option>
         <option value="Paddy">Paddy</option>
+        <option value="Pulses">Pulses</option>
         <option value="Millets">Millets</option>
-        {/* Add more options based on your dataset */}
+        <option value="Cotton">Cotton</option>
+        <option value="Oilseeds">Oilseeds</option>
+        {/* Add more crops as options here */}
       </select>
-      <button onClick={() => fetchVillageData(selectedCrop)}>Fetch Village Data</button>
+
+      <button onClick={fetchVillageData}>Fetch Village Data</button>
 
       <MapContainer center={[11.0, 77.0]} zoom={8} style={{ height: '400px', width: '100%' }}>
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <LayersControl position="topright">
+          {Object.entries(BASEMAPS).map(([name, basemap]) => (
+            <LayersControl.BaseLayer name={name} key={name} checked={name === "Google Maps"}>
+              <TileLayer
+                url={basemap.url}
+                attribution={basemap.attribution}
+              />
+            </LayersControl.BaseLayer>
+          ))}
+        </LayersControl>
+
         {villages.map((village, index) => (
-          <Marker key={index} position={[village.latitude, village.longitude]} icon={createIcon(selectedCrop)}>
-            <Popup>{village.village}: {village.crops[selectedCrop]} hectares</Popup>
+          <Marker 
+          key={index} 
+          position={[village.Latitude, village.Longitude]} 
+          icon={createIcon(selectedCrop)} // Use the createIcon function to set the icon based on the selectedCrop
+        >
+            <Popup>{village.VillageName}: {village.Crops[selectedCrop]} hectares</Popup>
           </Marker>
         ))}
       </MapContainer>
 
-      {/* Modal to display the total area */}
-      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        <p>Total area for {selectedCrop}: {totalArea} hectares</p>
+      {/* Bootstrap Modal for displaying total area */}
+      <Modal show={modalOpen} onHide={() => setModalOpen(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>Total Area for {selectedCrop}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{totalArea} hectares</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setModalOpen(false)}>
+            Close
+          </Button>
+        </Modal.Footer>
       </Modal>
     </div>
   );

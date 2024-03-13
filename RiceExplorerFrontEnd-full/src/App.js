@@ -12,7 +12,7 @@ import { getCookie } from "./utils/csrfToken";
 import { setToken } from "./features/csrfTokenSlice";
 
 import Map from "./components/LeafletMap";
-
+import CropSelectionComponent from "./apps/empirical/CropSelectionComponent";
 
 
 import "./App.css";
@@ -68,7 +68,9 @@ function App() {
                   <Route exact path="/empirical">
                     <EmpiricalLeft  />
                   </Route>
-                
+                  <Route exact path="/cropselection">
+            <CropSelectionComponent />
+          </Route>
                 </Switch>
               </div>
 

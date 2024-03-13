@@ -15,6 +15,7 @@ export default () => {
     <Navbar bg="dark" variant="dark" expand="lg" className='header' fixed='top'>
       <Container fluid>
         <Navbar.Brand href="/">Empirical Thresholding</Navbar.Brand>
+        <Nav.Link as={NavLink} to="/cropselection">Crop Selection</Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

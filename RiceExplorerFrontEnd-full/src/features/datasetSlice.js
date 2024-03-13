@@ -9,7 +9,7 @@ const initialDatasetState = {
   composite_days: '15',
   ascd: false,
   desc: true,
-  boundary: "CHITAWAN",
+  boundary: "Thanjavur",
   boundary_file: null,
   use_crop_mask: false,
   // crop_mask: "projects/testee-319020/assets/terai_agri_mask",

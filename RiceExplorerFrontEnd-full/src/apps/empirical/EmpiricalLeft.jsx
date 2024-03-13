@@ -14,7 +14,7 @@ export const EmpiricalLeft = (props) => {
 
   return (
     <div className="sidebar h-100 flex-column p-2">
-      <CropSelectionComponent/>
+   
       <Form method="POST" noValidate validated={validated}>
         
         <fieldset >

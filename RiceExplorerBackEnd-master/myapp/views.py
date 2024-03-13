@@ -3,16 +3,22 @@ from django.http import JsonResponse, HttpResponseBadRequest
 
 def crop_data(request):
     try:
+        selected_block = request.GET.get('block', None)
         selected_crop = request.GET.get('crop', None)
-        if not selected_crop:
-            return HttpResponseBadRequest("Crop type is required.")
+        if not selected_block or not selected_crop:
+            return HttpResponseBadRequest("Both block and crop type are required.")
 
-        # Load dataset
         with open('villages_data.json') as f:
-            villages = json.load(f)
+            data = json.load(f)
 
-        filtered_villages = [village for village in villages if village['crops'].get(selected_crop, 0) > 0]
-        total_area = sum(village['crops'].get(selected_crop, 0) for village in filtered_villages)
+        # Find the selected block
+        block_data = next((block for block in data if block['Block'] == selected_block), None)
+        if not block_data:
+            return JsonResponse({'message': 'Block not found', 'villages': [], 'total_area': 0})
+
+        # Filter villages that have the selected crop
+        filtered_villages = [village for village in block_data['Villages'] if village['Crops'].get(selected_crop, 0) > 0]
+        total_area = sum(village['Crops'].get(selected_crop, 0) for village in filtered_villages)
 
         response_data = {
             'villages': filtered_villages,
