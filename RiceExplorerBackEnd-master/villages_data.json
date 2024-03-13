@@ -3,10 +3,9 @@
     "Block": "Avinashi",
     "Villages": [
       {
-        "SNo": 1,
-        "VillageName": "Kaniympoondi",
-        "Latitude": 11.107,
-        "Longitude": 77.345,
+        "VillageName": "Kaniyampoondi",
+        "Latitude": 11.135329192444674,
+        "Longitude": 77.27942778798179,
         "Crops": {
           "Paddy": 1,
           "Millets": 61,
@@ -17,10 +16,9 @@
         }
       },
       {
-        "SNo": 2,
         "VillageName": "Rakiapalayam",
-        "Latitude": 11.112,
-        "Longitude": 77.352,
+        "Latitude": 11.15943584854102,
+        "Longitude": 77.28619530096948,
         "Crops": {
           "Paddy": 1,
           "Millets": 63,
@@ -31,10 +29,9 @@
         }
       },
       {
-        "SNo": 3,
-        "VillageName": "Palakarai",
-        "Latitude": 11.119,
-        "Longitude": 77.359,
+        "VillageName": "Palangarai",
+        "Latitude": 11.205039549424974,
+        "Longitude": 77.30284049960976,
         "Crops": {
           "Paddy": 0,
           "Millets": 187,
@@ -46,8 +43,8 @@
       },
       {
         "VillageName": "Avinashi",
-        "Latitude": 11.1913,
-        "Longitude": 77.2623,
+        "Latitude": 11.177057689607823,
+        "Longitude": 77.27854044328696,
         "Crops": {
           "Paddy": 0,
           "Millets": 48,
@@ -59,8 +56,8 @@
       },
       {
         "VillageName": "Karumampalayam",
-        "Latitude": 11.2202,
-        "Longitude": 77.2765,
+        "Latitude": 11.11752513184388,
+        "Longitude": 77.36739338353519,
         "Crops": {
           "Paddy": 0,
           "Millets": 73,
@@ -71,9 +68,9 @@
         }
       },
       {
-        "VillageName": "Chinnarapalayam",
-        "Latitude": 11.2568,
-        "Longitude": 77.2901,
+        "VillageName": "Chinneripalayam",
+        "Latitude": 11.212759191653593,
+        "Longitude": 77.28012776459637,
         "Crops": {
           "Paddy": 0,
           "Millets": 113,
@@ -84,9 +81,9 @@
         }
       },
       {
-        "VillageName": "Naduvancherry",
-        "Latitude": 11.2600,
-        "Longitude": 77.3100,
+        "VillageName": "Naduvacherry",
+        "Latitude": 11.230813000166684, 
+        "Longitude": 77.28377947823284,
         "Crops": {
           "Paddy": 0,
           "Millets": 58,
@@ -97,9 +94,9 @@
         }
       },
       {
-        "VillageName": "Iyyampalayam",
-        "Latitude": 11.2700,
-        "Longitude": 77.3250,
+        "VillageName": "Ayyampalayam",
+        "Latitude": 11.277576716321363,
+        "Longitude": 77.35414813792667,
         "Crops": {
           "Paddy": 0,
           "Millets": 91,
@@ -111,8 +108,8 @@
       },
       {
         "VillageName": "Thulakkamuthur",
-        "Latitude": 11.2800,
-        "Longitude": 77.3350,
+        "Latitude": 11.230012483995027,
+        "Longitude": 77.3416589739659,
         "Crops": {
           "Paddy": 0,
           "Millets": 121,
@@ -124,8 +121,8 @@
       },
       {
         "VillageName": "Kuppandampalayam",
-        "Latitude": 11.2900,
-        "Longitude": 77.3450,
+        "Latitude": 11.215143467034489,
+        "Longitude": 77.3133527215101,
         "Crops": {
           "Paddy": 0,
           "Millets": 91,
@@ -137,8 +134,8 @@
       },
       {
         "VillageName": "Vadugapalayam",
-        "Latitude": 11.3000,
-        "Longitude": 77.3550,
+        "Latitude": 11.245929076249038,
+        "Longitude": 77.28928644855341,
         "Crops": {
           "Paddy": 0,
           "Millets": 381,
@@ -150,8 +147,8 @@
       },
       {
         "VillageName": "Vettuvapalayam",
-        "Latitude": 11.3102,
-        "Longitude": 77.3650,
+        "Latitude": 11.216006195148083,
+        "Longitude": 77.22321683213652,
         "Crops": {
           "Paddy": 0,
           "Millets": 206,
@@ -163,8 +160,8 @@
       },
       {
         "VillageName": "Nammbiyampalayam",
-        "Latitude": 11.3203,
-        "Longitude": 77.3751,
+        "Latitude": 11.20707862870981,
+        "Longitude": 77.21895160238581,
         "Crops": {
           "Paddy": 0,
           "Millets": 259,
@@ -176,8 +173,8 @@
       },
       {
         "VillageName": "Tekkalur",
-        "Latitude": 11.3304,
-        "Longitude": 77.3852,
+        "Latitude": 11.156818765093083,
+        "Longitude": 77.21429581180793,
         "Crops": {
           "Paddy": 0,
           "Millets": 461,
@@ -188,9 +185,9 @@
         }
       },
       {
-        "VillageName": "Sembiyanallur",
-        "Latitude": 11.3405,
-        "Longitude": 77.3953,
+        "VillageName": "Sembianallur",
+        "Latitude": 11.17956134920961,
+        "Longitude": 77.24787934218189,
         "Crops": {
           "Paddy": 0,
           "Millets": 88,
@@ -202,8 +199,8 @@
       },
       {
         "VillageName": "Velauthampalayam",
-        "Latitude": 11.3506,
-        "Longitude": 77.4054,
+        "Latitude": 11.16292254815236,
+        "Longitude": 77.26359903317045,
         "Crops": {
           "Paddy": 0,
           "Millets": 145,
@@ -215,8 +212,8 @@
       },
       {
         "VillageName": "Pudupalayam North",
-        "Latitude": 11.3607,
-        "Longitude": 77.4155,
+        "Latitude": 11.154914626420089,
+        "Longitude": 77.24427238209866,
         "Crops": {
           "Paddy": 0,
           "Millets": 124,
@@ -228,8 +225,8 @@
       },
       {
         "VillageName": "Pudupalayam South",
-        "Latitude": 11.3708,
-        "Longitude": 77.4256,
+        "Latitude": 11.13290731230546,
+        "Longitude":  77.26159193346824,
         "Crops": {
           "Paddy": 0,
           "Millets": 73,
@@ -240,22 +237,9 @@
         }
       },
       {
-        "VillageName": "Pongalur",
-        "Latitude": 11.3809,
-        "Longitude": 77.4357,
-        "Crops": {
-          "Paddy": 1,
-          "Millets": 49,
-          "Pulses": 22,
-          "Cotton": 7,
-          "Sugarcane": 2,
-          "Oilseeds": 220
-        }
-      },
-      {
         "VillageName": "Pothampalayam",
-        "Latitude": 11.3900,
-        "Longitude": 77.4400,
+        "Latitude": 11.288625631997416,
+        "Longitude": 77.24779726212483,
         "Crops": {
           "Paddy": 0,
           "Millets": 207,
@@ -267,8 +251,8 @@
       },
       {
         "VillageName": "Punjaithamaraikulam",
-        "Latitude": 11.4000,
-        "Longitude": 77.4500,
+        "Latitude": 11.279973125161154,
+        "Longitude": 77.3100729816738,
         "Crops": {
           "Paddy": 0,
           "Millets": 145,
@@ -280,8 +264,8 @@
       },
       {
         "VillageName": "Pappankulam",
-        "Latitude": 11.4100,
-        "Longitude": 77.4600,
+        "Latitude": 11.260576094836887,
+        "Longitude": 77.26992535133124,
         "Crops": {
           "Paddy": 0,
           "Millets": 138,
@@ -292,9 +276,9 @@
         }
       },
       {
-        "VillageName": "Cheyur",
-        "Latitude": 11.4200,
-        "Longitude": 77.4700,
+        "VillageName": "Sevur",
+        "Latitude": 11.264344325712985,
+        "Longitude": 77.21738335578975,
         "Crops": {
           "Paddy": 0,
           "Millets": 144,
@@ -306,8 +290,8 @@
       },
       {
         "VillageName": "Alathur",
-        "Latitude": 11.4300,
-        "Longitude": 77.4800,
+        "Latitude": 11.30429822864138,
+        "Longitude": 77.16852694860106,
         "Crops": {
           "Paddy": 0,
           "Millets": 145,
@@ -319,8 +303,8 @@
       },
       {
         "VillageName": "Mangarasavalayapalayam",
-        "Latitude": 11.4400,
-        "Longitude": 77.4900,
+        "Latitude": 11.30108072685452,
+        "Longitude": 77.20169250125868,
         "Crops": {
           "Paddy": 0,
           "Millets": 161,
@@ -332,8 +316,8 @@
       },
       {
         "VillageName": "Kuttagam",
-        "Latitude": 11.4500,
-        "Longitude": 77.5000,
+        "Latitude": 11.33933050283327,
+        "Longitude": 77.2183298192315,
         "Crops": {
           "Paddy": 0,
           "Millets": 139,
@@ -345,8 +329,8 @@
       },
       {
         "VillageName": "Pulipar",
-        "Latitude": 11.4600,
-        "Longitude": 77.5100,
+        "Latitude": 11.304221990564946,
+        "Longitude": 77.25966903951904,
         "Crops": {
           "Paddy": 0,
           "Millets": 139,
@@ -359,8 +343,8 @@
       {
         "SNo": 32,
         "VillageName": "Thathanur",
-        "Latitude": 11.2345,
-        "Longitude": 77.3456,
+        "Latitude": 11.31938183227918,
+        "Longitude": 77.29638684427705,
         "Crops": {
           "Paddy": 0,
           "Millets": 201,
@@ -373,8 +357,8 @@
       {
         "SNo": 34,
         "VillageName": "Thandukkarapalayam",
-        "Latitude": 11.2567,
-        "Longitude": 77.3678,
+        "Latitude": 11.278163514421845,
+        "Longitude": 77.20377828175013,
         "Crops": {
           "Paddy": 0,
           "Millets": 297,
@@ -387,8 +371,8 @@
       {
         "SNo": 35,
         "VillageName": "Muriandampalayam",
-        "Latitude": 11.2789,
-        "Longitude": 77.3890,
+        "Latitude": 11.253874748005153,
+        "Longitude": 77.20666250710141,
         "Crops": {
           "Paddy": 0,
           "Millets": 200,
@@ -401,8 +385,8 @@
       {
         "SNo": 36,
         "VillageName": "Kanur",
-        "Latitude": 11.3011,
-        "Longitude": 77.4112,
+        "Latitude": 11.257559947664973,
+        "Longitude": 77.19593375557591,
         "Crops": {
           "Paddy": 0,
           "Millets": 167,
@@ -415,8 +399,8 @@
       {
         "SNo": 37,
         "VillageName": "Ramanathapuram",
-        "Latitude": 11.3233,
-        "Longitude": 77.4334,
+        "Latitude": 11.217253439210115,
+        "Longitude": 77.17706572829222,
         "Crops": {
           "Paddy": 2,
           "Millets": 144,
@@ -429,8 +413,8 @@
       {
         "SNo": 38,
         "VillageName": "Karuavalur",
-        "Latitude": 11.3455,
-        "Longitude": 77.4556,
+        "Latitude": 11.210873239824148,
+        "Longitude": 77.18605659706124,
         "Crops": {
           "Paddy": 0,
           "Millets": 106,
@@ -443,8 +427,8 @@
       {
         "SNo": 39,
         "VillageName": "Uppilipalayam",
-        "Latitude": 11.3677,
-        "Longitude": 77.4778,
+        "Latitude": 11.17003994354711,
+        "Longitude": 77.19705674474564,
         "Crops": {
           "Paddy": 0,
           "Millets": 153,

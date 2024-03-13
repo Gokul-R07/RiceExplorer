@@ -54,6 +54,9 @@ function App() {
       <div className="main d-flex h-100 w-100">
         <Switch>
         <Redirect exact from="/" to="/empirical" />
+        <Route exact path="/cropselection">
+            <CropSelectionComponent />
+          </Route>
         <Route>
             <SplitPane
               split="vertical"
@@ -68,9 +71,7 @@ function App() {
                   <Route exact path="/empirical">
                     <EmpiricalLeft  />
                   </Route>
-                  <Route exact path="/cropselection">
-            <CropSelectionComponent />
-          </Route>
+                  
                 </Switch>
               </div>
 
