@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import L from 'leaflet';
-import { Modal, Button, Dropdown } from 'react-bootstrap'; // Importing Bootstrap components
+import { Modal, Button, Dropdown } from 'react-bootstrap'; 
 import {
     LayersControl,
     MapContainer,
@@ -15,7 +15,7 @@ import { BASEMAPS } from "../../utils/constants";
   
   import "leaflet/dist/leaflet.css";
   import './style.css';
-// Assuming you have a basic CSS for Leaflet and Bootstrap included in your project
+
 
 const CropSelectionComponent = () => {
   const [selectedBlock, setSelectedBlock] = useState('');
@@ -37,9 +37,8 @@ const CropSelectionComponent = () => {
       });
   };
 
-  // Function to create a custom icon based on the crop type
 const createIcon = (cropType) => {
-    // Mapping crop types to icon URLs
+   
     const cropIcons = {
       Paddy: 'https://static.thenounproject.com/png/3050925-200.png',
       Millets: 'https://static.thenounproject.com/png/1206891-200.png',
@@ -47,17 +46,16 @@ const createIcon = (cropType) => {
       Cotton: 'https://www.svgrepo.com/show/441614/cotton.svg',
       Sugarcane: 'https://static.thenounproject.com/png/3925297-200.png',
       Oilseeds: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/oil-seed-3100074-2578101.png',
-      // Add more mappings for other crops as needed
       Default: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1qwJgYvxL2oKnLiBiGNqW2CFJpjY_MIOgzCWgE7oFg&s', // A default icon in case no specific icon is found for the crop type
     };
   
-    const iconUrl = cropIcons[cropType] || cropIcons['Default']; // Use the specific crop icon, or fallback to default
+    const iconUrl = cropIcons[cropType] || cropIcons['Default']; 
     
     return L.icon({
       iconUrl,
-      iconSize: [25, 25], // You can adjust the size as needed
-      iconAnchor: [17, 35], // Adjust according to the icon's size to position the icon correctly
-      popupAnchor: [0, -35], // Adjust if necessary to position the popup correctly relative to the icon
+      iconSize: [25, 25], 
+      iconAnchor: [17, 35],
+      popupAnchor: [0, -35],
     });
   };
   
@@ -71,7 +69,7 @@ const createIcon = (cropType) => {
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item onClick={() => setSelectedBlock('Avinashi')}>Avinashi</Dropdown.Item>
-            {/* Add more blocks as Dropdown.Items */}
+         
           </Dropdown.Menu>
         </Dropdown>
 
@@ -111,14 +109,13 @@ const createIcon = (cropType) => {
           <Marker 
           key={index} 
           position={[village.Latitude, village.Longitude]} 
-          icon={createIcon(selectedCrop)} // Use the createIcon function to set the icon based on the selectedCrop
+          icon={createIcon(selectedCrop)} 
         >
             <Popup>{village.VillageName}: {village.Crops[selectedCrop]} hectares</Popup>
           </Marker>
         ))}
       </MapContainer>
 
-      {/* Bootstrap Modal for displaying total area */}
       <Modal show={modalOpen} onHide={() => setModalOpen(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Total Area for {selectedCrop}</Modal.Title>

@@ -65,7 +65,7 @@ function App() {
               maxSize={leftSize["max"]}
               className="h-100 position-static"
             >
-              {/* left panel */}
+        
               <div className="h-100 w-100">
                 <Switch>
                   <Route exact path="/empirical">
@@ -82,9 +82,9 @@ function App() {
                 minSize={0}
                 maxSize={rightSize["max"]}
               >
-                {/* Mid panel */}
+     
                 <div className="h-100 w-100">
-                  {/* <MapPanel /> */}
+                 
                   <SplitPane 
                     split="horizontal" 
                     primary="second" 
@@ -103,7 +103,6 @@ function App() {
                   </SplitPane>
                 </div>
 
-                {/* Right panel */}
                 <div className="h-100">
 
                   <Route exact path="/empirical">

@@ -11,12 +11,12 @@ def crop_data(request):
         with open('villages_data.json') as f:
             data = json.load(f)
 
-        # Find the selected block
+       
         block_data = next((block for block in data if block['Block'] == selected_block), None)
         if not block_data:
             return JsonResponse({'message': 'Block not found', 'villages': [], 'total_area': 0})
 
-        # Filter villages that have the selected crop
+     
         filtered_villages = [village for village in block_data['Villages'] if village['Crops'].get(selected_crop, 0) > 0]
         total_area = sum(village['Crops'].get(selected_crop, 0) for village in filtered_villages)
 
